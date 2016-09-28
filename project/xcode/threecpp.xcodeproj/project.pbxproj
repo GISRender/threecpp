@@ -10,6 +10,9 @@
 		900920E31D92CCA1000E6E14 /* TCQuat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 900920E11D92CCA1000E6E14 /* TCQuat.cpp */; };
 		900920EC1D92D18A000E6E14 /* TCMatrixf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 900920EA1D92D18A000E6E14 /* TCMatrixf.cpp */; };
 		900920EF1D92D6B8000E6E14 /* TCMatrixd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 900920ED1D92D6B8000E6E14 /* TCMatrixd.cpp */; };
+		9081109C1D9B8E680063229E /* TCCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 908110961D9B8E680063229E /* TCCamera.cpp */; };
+		9081109D1D9B8E680063229E /* TCPerspectiveCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 908110981D9B8E680063229E /* TCPerspectiveCamera.cpp */; };
+		9081109E1D9B8E680063229E /* TCView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9081109A1D9B8E680063229E /* TCView.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,6 +42,12 @@
 		900920EB1D92D18A000E6E14 /* TCMatrixf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCMatrixf.h; sourceTree = "<group>"; };
 		900920ED1D92D6B8000E6E14 /* TCMatrixd.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TCMatrixd.cpp; sourceTree = "<group>"; };
 		900920EE1D92D6B8000E6E14 /* TCMatrixd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCMatrixd.h; sourceTree = "<group>"; };
+		908110961D9B8E680063229E /* TCCamera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TCCamera.cpp; sourceTree = "<group>"; };
+		908110971D9B8E680063229E /* TCCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCCamera.h; sourceTree = "<group>"; };
+		908110981D9B8E680063229E /* TCPerspectiveCamera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TCPerspectiveCamera.cpp; sourceTree = "<group>"; };
+		908110991D9B8E680063229E /* TCPerspectiveCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPerspectiveCamera.h; sourceTree = "<group>"; };
+		9081109A1D9B8E680063229E /* TCView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TCView.cpp; sourceTree = "<group>"; };
+		9081109B1D9B8E680063229E /* TCView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +80,8 @@
 		900920B31D92C279000E6E14 /* threecpp */ = {
 			isa = PBXGroup;
 			children = (
+				908110941D9B8E680063229E /* renderers */,
+				908110951D9B8E680063229E /* view */,
 				900920CF1D92C521000E6E14 /* math */,
 			);
 			path = threecpp;
@@ -95,6 +106,28 @@
 			);
 			name = math;
 			path = ../../../math;
+			sourceTree = "<group>";
+		};
+		908110941D9B8E680063229E /* renderers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = renderers;
+			path = ../../../renderers;
+			sourceTree = "<group>";
+		};
+		908110951D9B8E680063229E /* view */ = {
+			isa = PBXGroup;
+			children = (
+				908110961D9B8E680063229E /* TCCamera.cpp */,
+				908110971D9B8E680063229E /* TCCamera.h */,
+				908110981D9B8E680063229E /* TCPerspectiveCamera.cpp */,
+				908110991D9B8E680063229E /* TCPerspectiveCamera.h */,
+				9081109A1D9B8E680063229E /* TCView.cpp */,
+				9081109B1D9B8E680063229E /* TCView.h */,
+			);
+			name = view;
+			path = ../../../view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,7 +186,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				900920EC1D92D18A000E6E14 /* TCMatrixf.cpp in Sources */,
+				9081109C1D9B8E680063229E /* TCCamera.cpp in Sources */,
 				900920EF1D92D6B8000E6E14 /* TCMatrixd.cpp in Sources */,
+				9081109E1D9B8E680063229E /* TCView.cpp in Sources */,
+				9081109D1D9B8E680063229E /* TCPerspectiveCamera.cpp in Sources */,
 				900920E31D92CCA1000E6E14 /* TCQuat.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
